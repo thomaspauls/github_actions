@@ -8,12 +8,14 @@ jobs:
       uses: thomaspauls/github_actions/.github/workflows/reuse_call.yaml@main
       with: 
           username : Thomas
+      secrets:
           token: ${{secrets.token}}
      
     workflowB:
         uses: thomaspauls/github_actions/.github/workflows/reuse_call.yaml@main
         with: 
             username : Paul
+        secrets:
             token: ${{secrets.token}}
     
          
