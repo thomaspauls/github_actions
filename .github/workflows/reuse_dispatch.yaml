@@ -3,7 +3,11 @@ on:
   push:
       branches: none
   workflow_dispatch:
-  jobs:
-       workflowA:
+jobs:
+    workflowA:
+      uses: thomaspauls/github_actions/.github/workflows/reuse_call.yaml@main
+      with: 
+          username : Thomas
+          token: ${{secrets.token}}
     
          
