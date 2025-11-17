@@ -9,5 +9,11 @@ jobs:
       with: 
           username : Thomas
           token: ${{secrets.token}}
+     
+    workflowB:
+        uses: thomaspauls/github_actions/.github/workflows/reuse_call.yaml@main
+        with: 
+            username : Paul
+            token: ${{secrets.token}}
     
          
