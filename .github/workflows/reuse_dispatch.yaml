@@ -1,0 +1,9 @@
+name: Resuable_dispatch
+on: 
+  push:
+      branches: none
+  workflow_dispatch:
+  jobs:
+       workflowA:
+    
+         
